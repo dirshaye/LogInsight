@@ -10,10 +10,6 @@ import json
 import os
 from datetime import datetime
 import asyncio
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv(dotenv_path="../.env")
 
 # Import our modular components
 from ingest import log_ingestor
