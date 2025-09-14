@@ -1,0 +1,1 @@
+LogInsight is an AI-powered developer tool that ingests messy logs, cleans them in parallel, and lets you ask questions in plain English. Using Anthropic’s Claude, it normalizes noisy data, detects anomalies, and explains issues with evidence and performance metrics

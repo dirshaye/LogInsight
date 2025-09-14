@@ -1,0 +1,385 @@
+/* LogInsight Agent Styling */
+.App {
+  text-align: left;
+  background-color: #0d1117;
+  color: #e6edf3;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #30363d;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #58a6ff, #f78166);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.App-header p {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.1rem;
+  color: #8b949e;
+}
+
+.error-banner {
+  background-color: #da3633;
+  color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.carbon-dashboard {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.carbon-controls {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #0d1117;
+  border: 1px solid #059669;
+  border-radius: 6px;
+}
+
+.carbon-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #10b981;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.carbon-toggle input[type="checkbox"] {
+  accent-color: #10b981;
+}
+
+.carbon-impact {
+  background-color: #059669;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.optimization-info {
+  background-color: #064e3b;
+  border: 1px solid #059669;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #d1fae5;
+}
+
+.optimization-info h4 {
+  margin: 0 0 0.5rem 0;
+  color: #10b981;
+}
+
+.optimization-info .suggestion {
+  color: #a7f3d0;
+  font-style: italic;
+  margin: 0.25rem 0;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+/* Query Section */
+.query-section {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.query-section h2 {
+  margin: 0 0 1rem 0;
+  color: #f0f6fc;
+  font-size: 1.5rem;
+}
+
+.query-form {
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.query-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #e6edf3;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.query-input:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.1);
+}
+
+.query-input::placeholder {
+  color: #7d8590;
+}
+
+.query-button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #238636, #2ea043);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.query-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #2ea043, #238636);
+  transform: translateY(-1px);
+}
+
+.query-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Response Section */
+.response-section {
+  background-color: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.response-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.response-header h3 {
+  margin: 0;
+  color: #58a6ff;
+  font-size: 1.25rem;
+}
+
+.response-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.cached-badge {
+  background-color: #1f6feb;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.token-count {
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.response-content {
+  background-color: #161b22;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #58a6ff;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Logs Section */
+.logs-section {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.logs-section h2 {
+  margin: 0 0 1rem 0;
+  color: #f0f6fc;
+  font-size: 1.5rem;
+}
+
+.logs-container {
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid #21262d;
+  border-radius: 6px;
+  background-color: #0d1117;
+}
+
+.no-logs {
+  padding: 2rem;
+  text-align: center;
+  color: #7d8590;
+  font-style: italic;
+}
+
+.log-entry {
+  border-bottom: 1px solid #21262d;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.2s;
+}
+
+.log-entry:last-child {
+  border-bottom: none;
+}
+
+.log-entry:hover {
+  background-color: #161b22;
+}
+
+.log-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.log-timestamp {
+  color: #7d8590;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.log-level {
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* Log Level Colors */
+.log-level.error {
+  color: #ff4444;
+}
+
+.log-level.critical {
+  color: #cc0000;
+}
+
+.log-level.warn, .log-level.warning {
+  color: #ff9900;
+}
+
+.log-level.info {
+  color: #0066cc;
+}
+
+.log-level.debug {
+  color: #666666;
+}
+
+.log-level.high {
+  color: #ff6600;
+}
+
+.log-service {
+  color: #58a6ff;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  background-color: rgba(88, 166, 255, 0.1);
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.log-message {
+  color: #e6edf3;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* Custom Scrollbar */
+.logs-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.logs-container::-webkit-scrollbar-track {
+  background: #21262d;
+}
+
+.logs-container::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+.logs-container::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+  
+  .query-button {
+    width: 100%;
+  }
+  
+  .response-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .log-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .App-header h1 {
+    font-size: 2rem;
+  }
+}
